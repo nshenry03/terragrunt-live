@@ -7,7 +7,6 @@ deploy:
         - rm -rf ${ENV0_ROOT_DIR}/sandbox-sharedsvcs/ap-southeast-1/sandbox/vpc/.terragrunt-cache
     terraformPlan:
       after:
-        - cd ${ENV0_ROOT_DIR}/sandbox-sharedsvcs/ap-southeast-1/sandbox/vpc
-        - terragrunt render-json
-        - jq . terragrunt_rendered.json
-        - jq . terragrunt-debug.tfvars.json
+        - cd ${ENV0_ROOT_DIR}/sandbox-sharedsvcs/ap-southeast-1/sandbox/vpc ; terragrunt render-json
+        - jq . ${ENV0_ROOT_DIR}/sandbox-sharedsvcs/ap-southeast-1/sandbox/vpc/terragrunt_rendered.json
+        - jq . ${ENV0_ROOT_DIR}/sandbox-sharedsvcs/ap-southeast-1/sandbox/vpc/terragrunt-debug.tfvars.json
