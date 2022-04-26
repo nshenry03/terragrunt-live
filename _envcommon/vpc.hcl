@@ -4,7 +4,7 @@ terraform {
 
 locals {
   # Expose the base source URL so different versions of the module can be deployed in different environments.
-  base_source_url = "git::git@github.com:terraform-aws-modules/terraform-aws-vpc.git//.?ref=master"
+  base_source_url = "https://github.com/nshenry03/terragrunt-live.git//.?ref=master"
 
   # Automatically load common variables
   common_vars = read_terragrunt_config(find_in_parent_folders("common.hcl"))
