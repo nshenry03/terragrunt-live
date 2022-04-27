@@ -104,7 +104,7 @@ every environment, you can inherit them from the `inputs` defined in the root
 1. [Create Your Projects](https://docs.env0.com/docs/projects#create-a-new-project)
 
     We chose to create a project for each
-    [account](## How is the code in this repo organized?) so we created
+    [account](#how-is-the-code-in-this-repo-organized) so we created
     `sandbox-apps` and `sandbox-sharedsvcs` projects.  You may want to create
     a project for each of your accounts or you may want to organize things
     differently. See the [Projects](https://docs.env0.com/docs/projects)
