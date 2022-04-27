@@ -1,6 +1,6 @@
 # Terragrunt POC
 
-POC to demonstrate using Terragrunt.
+POC to demonstrate using Terragrunt with [Terraform Cloud].
 
 Be sure to read through [the Terragrunt documentation on DRY
 Architectures](https://terragrunt.gruntwork.io/docs/features/keep-your-terragrunt-architecture-dry/)
@@ -78,3 +78,5 @@ to pass common variables down to each of your modules. Rather than copy/pasting
 the same variables into each `terragrunt.hcl` file, in every region, and in
 every environment, you can inherit them from the `inputs` defined in the root
 `terragrunt.hcl` file.
+
+[Terraform Cloud]: https://app.terraform.io

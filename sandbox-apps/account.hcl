@@ -3,7 +3,7 @@
 locals {
   account_cidr    = "10.202.0.0/17"
   aws_account_id  = "481862586350"
-  tag_environment = "sandbox-apps"
+  tag_environment = "sandbox-apps-tfc"
 
   # Calculated
   account_type             = split("-", local.tag_environment)[1] == "apps" ? "apps" : "sharedsvcs"
