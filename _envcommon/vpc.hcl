@@ -45,6 +45,7 @@ locals {
     Customer    = local.customer
     Environment = local.environment
     Region      = local.region
+    Role        = "N/A"
   }
 }
 
